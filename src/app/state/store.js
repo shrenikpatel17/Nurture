@@ -1,11 +1,6 @@
 "use client";
 
 import authReducer from "./reducers/authSlice";
-import courseReducer from "./reducers/courseSlice";
-import folderReducer from "./reducers/folderSlice";
-import homeReducer from "./reducers/homeSlice";
-import tabReducer from "./reducers/tabSlice";
-import flashcardReducer from "./reducers/flashcardSlice";
 
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "@reduxjs/toolkit";
