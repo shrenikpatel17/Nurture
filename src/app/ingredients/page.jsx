@@ -226,7 +226,20 @@ export default function Ingredient() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 px-4 gap-x-12 gap-y-5 mb-4 absolute -mt-[28rem] ml-[17rem]">
                 {Object.keys(activeIngredients).map((ingredient, index) => {
                 return(
-                    <div onClick={select} key={index} className="bg-med-red rounded-full px-8 font-Jua text-md py-3 text-center hover:cursor-pointer">{ingredient}</div>
+                  <div 
+                    onClick={select} 
+                    key={index} 
+                    className="flex items-center bg-med-red rounded-full px-8 py-3 text-center hover:cursor-pointer"
+                  >
+                    {/* SVG icon goes here */}
+                    <Image priority src={`${ingredient}.svg`} height={32} width={32}></Image>
+                    
+                    {/* Ingredient text */}
+                    <span className="flex-1 text-md font-Jua">
+                      {ingredient}
+                    </span>
+                  </div>
+
                 )})}
             </div>
             <div className="flex justify-center absolute -mt-[8rem] ml-[32rem]">
