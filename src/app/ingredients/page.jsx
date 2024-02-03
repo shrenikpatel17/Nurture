@@ -228,7 +228,7 @@ export default function Ingredient() {
                 return(
                   <div 
                     onClick={select} 
-                    key={index} 
+                    key={index}
                     className="flex items-center bg-med-red rounded-full px-8 py-3 text-center hover:cursor-pointer"
                   >
                     {/* SVG icon goes here */}
