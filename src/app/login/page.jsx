@@ -3,7 +3,10 @@
 import { useRouter } from "next/navigation";
 import { useDispatch } from "react-redux";
 import { authActions } from "@/app/state/reducers/authSlice";
+import { ingredientActions } from "../state/reducers/ingredientSlice";
+import { weekActions } from "../state/reducers/weekSlice";
 // import { signIn } from "next-auth/react"
+const data = require("../data.json"); 
   
 export default function Login() {
   // const router = useRouter();
@@ -64,11 +67,41 @@ export default function Login() {
           token: loggedIn.token,
         })
       );
+
+      //filter function
+      let filteredIngredients = {}
+
+      for (const [week, nutrients] of Object.entries(data)) {
+        for(const [nutrient, nutrientData] of Object.entries(nutrients)){
+          const ingredients = nutrientData["ingredients"]
+          Object.keys(ingredients).forEach((ingredient) => {
+            let allergic = false;
+            for(allergy in ingredient["allergies"]){
+              if(loggedIn.user.allergies.includes(allergy)){
+                allergic = true;
+              }
+            }
+            if (!(ingredient["diet_restrictions"].includes(loggedIn.user.diet) || allergic)){
+              filteredIngredients[week][nutrient]["ingredients"][ingredient] = ingredients[ingredient]
+            } 
+          })
+          filteredIngredients[week][nutrient]["description"] = nutrientData["description"]
+          filteredIngredients[week][nutrient]["meals"] = nutrientData["meals"]
+        }
+      };
+
+      
+      
       dispatch(
-        courseActions.loadCourses(
-          loggedIn.user.courses
-        )
-      );
+        ingredientActions.setFilteredData(filteredIngredients)
+      )
+
+      dispatch(weekActions.setActiveWeek(loggedIn.user.weeksIntoPregnancy))
+      // dispatch(
+      //   courseActions.loadCourses(
+      //     loggedIn.user.courses
+      //   )
+      // );
       e.target.reset();
       router.push("/dashboard");
     }
