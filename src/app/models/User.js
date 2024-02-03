@@ -44,10 +44,9 @@ const UserSchema = new mongoose.Schema(
 
     allWeeksNutrientInfo: {
         type: Array,
-        default: [],
+        default: {},
         // [
-        //     {
-        //     //weekNumber: 0 = week 1
+        //     week1: {
         //     addedIngredients: [],
         //     eatenRecipes: [],
         //     nutrientContent: {
@@ -55,8 +54,7 @@ const UserSchema = new mongoose.Schema(
         //         "name": .2,
         //     }
         //     },
-        //     {
-        //         //weekNumber: 0 = week 1
+        //     week2: {
         //         addedIngredients: [],
         //         eatenRecipes: [],
         //         nutrientContent: {
