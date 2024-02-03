@@ -10,7 +10,11 @@ const initialState = {
     lastName: "",
     email: "",
     password: "",
-    courses: [],
+    weeksIntoPregnancy: 0,
+    allergies: [],
+    diet: "",
+    favoriteRecipes: [],
+    allWeeksNutrientInfo: {}
   },
   token: "",
 };
