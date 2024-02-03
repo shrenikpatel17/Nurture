@@ -12,6 +12,13 @@ export default function Home() {
     if (!e.target.firstName.value || !e.target.lastName.value || !e.target.email.value || !e.target.password.value) {
       return "All fields are required";
     }
+
+    var allergiesArray = []
+    var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+
+    for (var i = 0; i < checkboxes.length; i++) {
+      allergiesArray.push(checkboxes[i].name)
+    }
  
     try {
       const res = await fetch("api/signup", {
@@ -24,6 +31,9 @@ export default function Home() {
           lastName: e.target.lastName.value,
           email: e.target.email.value,
           password: e.target.password.value,
+          weeksIntoPregnancy: e.target.weeksIn.value,
+          allergies: allergiesArray,
+          diet: e.target.diet.value,
         }),
       });
 
