@@ -1,6 +1,8 @@
 "use client";
 
 import authReducer from "./reducers/authSlice";
+import weekReducer from "./reducers/weekSlice";
+import ingredientReducer from "./reducers/ingredientSlice";
 
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "@reduxjs/toolkit";
@@ -38,8 +40,8 @@ const persistConfig = { key: "root", storage, version: 1 };
 
 const rootReducer = combineReducers({
   auth: authReducer,
-//   course: courseReducer,
-//   folder: folderReducer,
+  week: weekReducer,
+  ingredient: ingredientReducer,
 //   home: homeReducer,
 //   tab: tabReducer,
 //   flashcard: flashcardReducer, 

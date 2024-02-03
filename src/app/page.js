@@ -150,33 +150,33 @@ export default function Home() {
                   className="font-biscuitReg block w-full rounded-2xl border-0 py-1.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-light-gray focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6 hover:bg-blue">
 
                 <div>
-                  <input type="checkbox" id="milk" name="milk" />
+                  <input type="checkbox" id="milk" name="Milk" />
                   <label for="milk">Milk</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="egg" name="egg" />
+                  <input type="checkbox" id="egg" name="Egg" />
                   <label for="egg">Egg</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="fish" name="fish" />
+                  <input type="checkbox" id="fish" name="Fish" />
                   <label for="fish">Fish</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="shellfish" name="shellfish" />
+                  <input type="checkbox" id="shellfish" name="Shellfish" />
                   <label for="shellfish">Shellfish</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="treeNuts" name="treeNuts" />
+                  <input type="checkbox" id="treeNuts" name="Tree Nuts" />
                   <label for="treeNuts">Tree Nuts</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="peanuts" name="peanuts" />
+                  <input type="checkbox" id="peanuts" name="Peanuts" />
                   <label for="peanuts">Peanuts</label>
                 </div><div>
-                  <input type="checkbox" id="wheat" name="wheat" />
+                  <input type="checkbox" id="wheat" name="Wheat" />
                   <label for="wheat">Wheat</label>
                 </div><div>
-                  <input type="checkbox" id="soybeans" name="soybeans" />
+                  <input type="checkbox" id="soybeans" name="Soybeans" />
                   <label for="soybeans">Soybeans</label>
                 </div>
               </div>
@@ -188,10 +188,10 @@ export default function Home() {
               </label>
               <div>
               <select name="diet" id="diet">
-                <option value="noRestrictions">No Restrictions</option>
-                <option value="vegetarian">Vegetarian</option>
-                <option value="vegan">Vegan</option>
-                <option value="lactoseIntolerant">Lactose-Intolerant</option>
+                <option value="No Restrictions">No Restrictions</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Lactose-Intolerant">Lactose-Intolerant</option>
               </select>
               </div>
             </div>

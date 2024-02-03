@@ -45,7 +45,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -186,7 +186,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -327,7 +327,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -468,7 +468,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -1981,7 +1981,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -2233,7 +2233,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -2485,7 +2485,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -2737,7 +2737,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -4692,7 +4692,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -4938,7 +4938,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -5184,7 +5184,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -5430,7 +5430,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -7738,7 +7738,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -7984,7 +7984,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -8230,7 +8230,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{
@@ -8476,7 +8476,7 @@
                     },
                 "Trout":{
                     "diet_restrictions": ["Vegetarian", "Vegan"],
-                    "allergie": ["Fish"],
+                    "allergies": ["Fish"],
                     "nutrient": ["Omega-3 Fatty Acids"]
                     },
                 "Chia Seeds":{

@@ -74,24 +74,40 @@ export default function Login() {
       for (const [week, nutrients] of Object.entries(data)) {
         for(const [nutrient, nutrientData] of Object.entries(nutrients)){
           const ingredients = nutrientData["ingredients"]
-          Object.keys(ingredients).forEach((ingredient) => {
+
+          if(!filteredIngredients.hasOwnProperty(week)){
+            filteredIngredients[week] = {}
+          }
+          if(!filteredIngredients[week].hasOwnProperty(nutrient)){
+            filteredIngredients[week][nutrient] = {"ingredients": {}}
+          }
+          Object.keys(ingredients).forEach((key) => {
+            
+            const ingredient = ingredients[key]
             let allergic = false;
-            for(allergy in ingredient["allergies"]){
+            console.log(week)
+            console.log(nutrient)
+            ingredient["allergies"].map((allergy) => {
               if(loggedIn.user.allergies.includes(allergy)){
                 allergic = true;
               }
-            }
+            })
             if (!(ingredient["diet_restrictions"].includes(loggedIn.user.diet) || allergic)){
-              filteredIngredients[week][nutrient]["ingredients"][ingredient] = ingredients[ingredient]
+
+              filteredIngredients[week][nutrient]["ingredients"][key] = ingredient
             } 
+            else {
+              console.log(key)
+            }
           })
+
           filteredIngredients[week][nutrient]["description"] = nutrientData["description"]
           filteredIngredients[week][nutrient]["meals"] = nutrientData["meals"]
         }
       };
+      
+      console.log(filteredIngredients)
 
-      
-      
       dispatch(
         ingredientActions.setFilteredData(filteredIngredients)
       )

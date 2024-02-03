@@ -1,8 +1,8 @@
-import { connectMongoDB } from "@/lib/mongodb";
+import { connectMongoDB } from "@/app/lib/mongodb";
 import { NextResponse } from "next/server";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { User } from "@/models/User";
+import { User } from "@/app/models/User";
 import { env } from "node:process";
 
 export async function POST(req) {
