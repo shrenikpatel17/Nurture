@@ -6,6 +6,9 @@ import { ingredientActions } from "../state/reducers/ingredientSlice";
 import { weekActions } from "../state/reducers/weekSlice";
 import { useState, useEffect } from "react";
 import NavBarComponent from "../components/NavBarComponent";
+import logo from '../../../public/logo.png'
+import Image from "next/image"
+import Wave from '../../../public/Wave.svg'
 
 
 export default function Ingredient() {
@@ -210,27 +213,28 @@ export default function Ingredient() {
     return(
         <>
             {/* <div className="container px-4"> */}
-            <h1 className='text-white text-8xl p-5 mt-2 font-CBYG absolute'>Personalized Ingredients</h1>
-            <svg className="z-0" viewBox="0 0 500 100">
+            <Image src={logo} width={200} height={200} className='absolute ml-6 mt-2'></Image>
+            <h1 className='text-white text-8xl p-5 mt-16 font-Jua absolute'>Personalized Ingredients</h1>
+            <Image src={Wave} width={2000} height={1} className=''></Image>
+
+            {/* <svg className="z-0" viewBox="0 0 500 100">
             <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#F497AA" opacity="0.8"></path>
             <path d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill="#EAA9B3" opacity="0.5"></path>
             <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#DB425D" opacity="0.8"></path>
-            </svg>
+            </svg> */}
             <NavBarComponent />  
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 px-4 gap-x-12 gap-y-5 mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 px-4 gap-x-12 gap-y-5 mb-4 absolute -mt-[28rem] ml-[17rem]">
                 {Object.keys(activeIngredients).map((ingredient, index) => {
                 return(
                     <div onClick={select} key={index} className="bg-med-red rounded-full px-8 font-Jua text-md py-3 text-center hover:cursor-pointer">{ingredient}</div>
                 )})}
             </div>
-            <div className="flex justify-center">
-            <button onClick={()=>document.getElementById('new_ingredient_modal').showModal()} className="mr-5 font-Jua text-white justify-center inline-block rounded-full bg-gradient-to-b from-red-gradient to-orange-gradient mt-10 px-8 pb-4 pt-2.5 text-s font-medium uppercase">Add Ingredient</button>
-            <button onClick={generate} className="ml-5 font-Jua text-white justify-center inline-block rounded-full bg-gradient-to-b from-red-gradient to-orange-gradient mt-10 px-8 pb-4 pt-2.5 text-s font-medium uppercase">Generate</button>
+            <div className="flex justify-center absolute -mt-[8rem] ml-[32rem]">
+            <button onClick={()=>document.getElementById('new_ingredient_modal').showModal()} className="mr-5 font-Jua text-white flex items-center justify-center inline-block rounded-full bg-gradient-to-b from-red-gradient to-orange-gradient mt-10 px-8 pb-4 pt-2.5 text-s font-medium uppercase">Add Ingredient</button>
+            <button onClick={generate} className="ml-5 font-Jua text-white justify-center inline-block rounded-full bg-gradient-to-b from-red-gradient to-orange-gradient flex items-center  mt-10 px-8 pb-4 pt-2.5 text-s font-medium uppercase">Generate</button>
               {/* <button onClick={()=>{dispatch(weekActions.setActiveWeek(activeWeek + 1))}}>Next week</button> */}
             </div>
             {/* </div> */}
-            RECIPE: {recipe}
-
         {/* MODAL CODE */}
         <dialog id="new_ingredient_modal" className="modal font-biscuitReg rounded-3xl h-[10.35rem] bg-off-white">
         <div className="modal-box">
@@ -238,7 +242,7 @@ export default function Ingredient() {
 
             <div className="form_container ml-5 mr-5">
                 <div className="header ">
-                <h4 className="headerText text-dark-gray text-xl font-biscuitMed mt-3">Add Ingredient</h4>
+                <h4 className="headerText text-dark-gray text-xl font-biscuitMed">Add Ingredient</h4>
                 <hr className="text-light-gray mb-4"></hr>
                 {/* <span className="closeCircle" onClick={routeChange}></span> */}
                 </div>

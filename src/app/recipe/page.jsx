@@ -9,6 +9,9 @@ import { useState, useEffect } from "react";
 import NavBarComponent from "../components/NavBarComponent";
 import RecipesComponent from "../components/RecipesComponent";
 import SingleRecipe from "../components/SingleRecipe";
+import logo from '../../../public/logo.png'
+import Image from "next/image"
+import Wave from '../../../public/Wave.svg'
 
 
 export default function Recipes() {
@@ -41,6 +44,8 @@ export default function Recipes() {
     //     console.log(selectedIngredients)
     // }
 
+    const [isLoading, setIsLoading] = useState(true)
+
     useEffect(() => {
       const getRecipes = async() => {
         const response = await fetch(`/api/recipe?query=${user._id}`, {
@@ -54,20 +59,26 @@ export default function Recipes() {
           dispatch(recipeActions.setActiveRecipes(recipes.data));
       }
       getRecipes();
+
+      setIsLoading(false);
     }, [activeWeek])
 
     return(
         <>
+        {!isLoading && <>
             {/* <div className="container px-4"> */}
-            <h1 className='text-white text-8xl p-5 mt-2 font-CBYG absolute'>Curated Recipes</h1>
-            <svg className="z-0" viewBox="0 0 500 100">
+            <Image src={logo} width={200} height={200} className='absolute ml-6 mt-2'></Image>
+            <h1 className='text-white text-8xl p-5 mt-16 font-Jua absolute'>Curated Recipes</h1>
+            <Image src={Wave} width={2000} height={1} className=''></Image>
+
+            {/* <svg className="z-0" viewBox="0 0 500 100">
             <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#F497AA" opacity="0.8"></path>
             <path d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill="#EAA9B3" opacity="0.5"></path>
             <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#DB425D" opacity="0.8"></path>
-            </svg>
+            </svg> */}
 
             <NavBarComponent /> 
-            <div className="flex flex-row flex-wrap items-center justify-center space-x-10 scale-75 -mt-20">
+            <div className="flex flex-row space-x-10 scale-[65%] -ml-40 -mt-[40rem] absolute">
             {activeRecipes.map((recipe, index) => {
                 return(
                     <SingleRecipe {...recipe} />
@@ -77,6 +88,7 @@ export default function Recipes() {
             {/* <button className="font-Jua text-white justify-center inline-block rounded-full bg-gradient-to-b from-red-gradient to-orange-gradient mt-10 px-8 pb-4 pt-2.5 text-s font-medium uppercase">Generate</button> */}
               {/* <button onClick={()=>{dispatch(weekActions.setActiveWeek(activeWeek + 1))}}>Next week</button> */}
             {/* </div> */}
+        </>}
         </>
     )
 
