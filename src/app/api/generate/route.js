@@ -14,7 +14,7 @@ export async function POST(req) {
         const response = await fetch(
             "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
             {
-              headers: { Authorization: "Bearer " + env.hfKey },
+              headers: { Authorization: "Bearer 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" },
               method: "POST",
               body: JSON.stringify(data),
             }

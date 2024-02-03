@@ -85,8 +85,6 @@ export default function Login() {
             
             const ingredient = ingredients[key]
             let allergic = false;
-            console.log(week)
-            console.log(nutrient)
             ingredient["allergies"].map((allergy) => {
               if(loggedIn.user.allergies.includes(allergy)){
                 allergic = true;
@@ -96,12 +94,9 @@ export default function Login() {
 
               filteredIngredients[week][nutrient]["ingredients"][key] = ingredient
             } 
-            else {
-              console.log(key)
-            }
           })
 
-          filteredIngredients[week][nutrient]["definition"] = nutrientData["description"]
+          filteredIngredients[week][nutrient]["definition"] = nutrientData["definition"]
           filteredIngredients[week][nutrient]["meals"] = nutrientData["meals"]
         }
       };

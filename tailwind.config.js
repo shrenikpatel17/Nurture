@@ -1,50 +1,65 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      'black': '#000000',
-      'white':'#FFFFFF',
-      'blue': '#E4F4FF',
-      'blue-md': '#D0E5FF',
-      'dark-blue': '#7CABE6',
-      'pink': '#F2E5FF',
-      'dark-gray': '#515151',
-      'light-gray': "#CECECE",
-      'gray': '#BCBCBC',
-      'off-white': "#F6F8FF",
-      'storm' : "#EDF1FF",
-      'pastel-purple' : "#EBECFF",
-      'dark-purple' : "#B3AAEC",
-      'purple-md' : "#E0DBFF",
-      'pastel-green' : "#C0FCD4",
-      'dark-green' : "#5AC38A",
-      'pastel-red' : "#FFDBDB",
-      'dark-red' : "#FAA6A6",
-      'light-pink' : "#FEDCFF",
-      'dark-pink' : "#FFA1DF",
-      'hover-red' : "#FF8282",
-      'hover-purple' : "#9287D9",
-      'hover-blue' : "#558DD3",
-      'hover-green' : "#40A66F",
-      'hover-pink' : "#FF85D5",
-      'folder-blue' : "#DFE6FF",
-      'darker-gray' : "#808080",
-      'green': "#09af98",
-      'purple': "#f2e5ff"
-    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        Abril: ["Abril"],
+        Abhaya: ["Abhaya"],
+        AbhayaSemi: ["AbhayaSemi"],
+        Jua: ["Jua"],
+        CBYG: ["CBYG"]
+      },
+      animation: {
+        blob1: "blob1 7s infinite",
+        blob2: "blob2 4s infinite",
+      },
+      keyframes: {
+        blob1: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(50px, -30px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-50px, 30px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
+        blob2: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(-50px, 30px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(50px, -30px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
+      },
+      colors: {
+        transparent: 'transparent',
+        'gradient-1': '#FFDDD4',
+        'gradient-2': '#FF6A43',
+        'maroon': '#631A1A',
+        'gray-md': '#DADADA',
+        'light-pink': '#FFE1D9', 
+        'med-pink':'#FFCEC1',
+        'dark-pink': '#FFBBA9',
+        'darker-pink': '#FF8D6E',
+        'brown': '#A2442B',
+        'red-gradient': '#E9656A', 
+        'orange-gradient': '#FF9C7D',
+        'med-red': '#F497AA'
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

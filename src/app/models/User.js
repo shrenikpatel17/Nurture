@@ -43,7 +43,7 @@ const UserSchema = new mongoose.Schema(
     },
 
     allWeeksNutrientInfo: {
-        type: Array,
+        type: Object,
         default: {},
         // [
         //     week1: {

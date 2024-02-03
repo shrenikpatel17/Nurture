@@ -15,13 +15,13 @@ export const ingredientSlice = createSlice({
     setFilteredData: (state, action) => {
         state.filteredData = action.payload
     },
-    // addIngredient: (state, action) => {
-    //     let ingredients = state.ingredients
-    //     if(!Object.keys(ingredients).includes(action.payload)){
-    //         ingredients[action.payload] = {nutrient: []}
-    //     }
-    //     state.ingredients = ingredients
-    // },
+    addIngredient: (state, action) => {
+        let ingredients = state.activeIngredients
+        if(!Object.keys(ingredients).includes(action.payload)){
+            ingredients[action.payload] = {nutrient: []}
+        }
+        state.activeIngredients = ingredients
+    },
     setActiveIngredients: (state, action) => {
         state.activeIngredients = action.payload
     }

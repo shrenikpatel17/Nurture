@@ -13,15 +13,23 @@ const RecipeSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    nutrients: {
-      type: Array,
-      default: [],    
-    },
     calories: {
       type: String,
       default: "",
     },
+    nutrients: {
+      type: Array,
+      default: [],
+    },
     imagePath: {
+        type: String,
+        default: "",
+      },
+    userAffiliation: {
+        type: String,
+        default: "",
+      },
+    weekAffiliation: {
         type: String,
         default: "",
       },

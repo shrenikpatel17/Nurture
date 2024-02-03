@@ -3,6 +3,7 @@
 import authReducer from "./reducers/authSlice";
 import weekReducer from "./reducers/weekSlice";
 import ingredientReducer from "./reducers/ingredientSlice";
+import recipeReducer from "./reducers/recipeSlice";
 
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "@reduxjs/toolkit";
@@ -42,9 +43,7 @@ const rootReducer = combineReducers({
   auth: authReducer,
   week: weekReducer,
   ingredient: ingredientReducer,
-//   home: homeReducer,
-//   tab: tabReducer,
-//   flashcard: flashcardReducer, 
+  recipe: recipeReducer, 
 });
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
