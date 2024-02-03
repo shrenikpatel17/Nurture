@@ -62,7 +62,7 @@ export default function Dashboard() {
                 return(<p key={index}>{ingredient}</p>)
             })}
             <br></br>
-            {/* <button onClick={dispatch(weekActions.setActiveWeek(activeWeek + 1))}>Next week</button> */}
+            <button onClick={()=>{dispatch(weekActions.setActiveWeek(activeWeek + 1))}}>Next week</button>
             </>
         }
         </>
