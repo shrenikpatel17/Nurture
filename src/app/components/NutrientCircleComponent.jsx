@@ -44,7 +44,7 @@ const NutrientCircleComponent = (props) => {
             {console.log(activeWeek)}
             <CircularProgress determinate value={user.allWeeksNutrientInfo["week" + activeWeek]["nutrientContent"][props.nutrient]*100} color='danger' thickness={9} sx={{ '--CircularProgress-size': '125px' }}>
         <div className='flex flex-col items-center'>
-            <p className='font-Jua text-4xl text-maroon mt-4'>{user.allWeeksNutrientInfo["week" + activeWeek]["nutrientContent"][props.nutrient]*100}%</p>
+            <p className='font-Jua text-4xl text-maroon mt-4'>{Math.round(user.allWeeksNutrientInfo["week" + activeWeek]["nutrientContent"][props.nutrient]*100)}%</p>
             <div className='flex'>
                 <div className='h-full w-72'>
                     <a className='flex justify-center -mt-6'>
