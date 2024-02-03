@@ -101,7 +101,7 @@ export default function Login() {
             }
           })
 
-          filteredIngredients[week][nutrient]["description"] = nutrientData["description"]
+          filteredIngredients[week][nutrient]["definition"] = nutrientData["description"]
           filteredIngredients[week][nutrient]["meals"] = nutrientData["meals"]
         }
       };

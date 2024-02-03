@@ -20,9 +20,8 @@ export async function POST(req) {
       allergies,
       diet,
       favoriteRecipes: [],
-      allWeeksNutrientInfo: [
-        {
-            week: 1,
+      allWeeksNutrientInfo: {
+        week1: {
             addedIngredients: [],
             eatenRecipes: [],
             nutrientContent: {
@@ -32,8 +31,7 @@ export async function POST(req) {
                 "Iron": 0,
             },
         },
-        {
-          week: 2,
+        week2: {
           addedIngredients: [],
           eatenRecipes: [],
           nutrientContent: {
@@ -43,8 +41,7 @@ export async function POST(req) {
               "Iron": 0,
           },
       },
-      {
-        week: 3,
+      week3: {
         addedIngredients: [],
         eatenRecipes: [],
         nutrientContent: {
@@ -54,8 +51,7 @@ export async function POST(req) {
             "Iron": 0,
         },
     },
-      {
-        week: 4,
+    week4: {
         addedIngredients: [],
         eatenRecipes: [],
         nutrientContent: {
@@ -65,8 +61,7 @@ export async function POST(req) {
             "Iron": 0,
         },
     },
-    {
-      week: 5,
+    week5: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -78,8 +73,7 @@ export async function POST(req) {
           "Vitamin B6": 0,
       },
     },
-    {
-      week: 6,
+    week6: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -91,8 +85,7 @@ export async function POST(req) {
           "Vitamin B6": 0,
       },
     },
-    {
-      week: 7,
+    week7: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -104,8 +97,7 @@ export async function POST(req) {
           "Vitamin B6": 0,
       },
     },
-    {
-      week: 8,
+    week8: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -117,8 +109,7 @@ export async function POST(req) {
           "Vitamin B6": 0,
       },
     },
-    {
-      week: 9,
+    week9: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -130,8 +121,7 @@ export async function POST(req) {
           "Coenzyme Q10": 0,
       },
     },
-    {
-      week: 10,
+    week10: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -143,8 +133,7 @@ export async function POST(req) {
           "Coenzyme Q10": 0,
       },
     },
-    {
-      week: 11,
+    week11: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -156,8 +145,7 @@ export async function POST(req) {
           "Coenzyme Q10": 0,
       },
     },
-    {
-      week: 12,
+    week12: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -169,8 +157,7 @@ export async function POST(req) {
           "Coenzyme Q10": 0,
       },
     },
-    {
-      week: 13,
+    week13: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -184,8 +171,7 @@ export async function POST(req) {
           "Vitamin B5": 0,
       },
     },
-    {
-      week: 14,
+    week14: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -199,8 +185,7 @@ export async function POST(req) {
           "Vitamin B5": 0,
       },
     },
-    {
-      week: 15,
+    week15: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -214,8 +199,7 @@ export async function POST(req) {
           "Vitamin B5": 0,
       },
     },
-    {
-      week: 16,
+    week16: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -229,8 +213,7 @@ export async function POST(req) {
           "Vitamin B5": 0,
       },
     },
-    {
-      week: 17,
+    week17: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -242,8 +225,7 @@ export async function POST(req) {
           "Vitamin B9": 0,
       },
     },
-    {
-      week: 18,
+    week18: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -255,8 +237,7 @@ export async function POST(req) {
           "Vitamin B9": 0,
       },
     },
-    {
-      week: 19,
+    week19: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -268,8 +249,7 @@ export async function POST(req) {
           "Vitamin B9": 0,
       },
     },
-    {
-      week: 20,
+    week20: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -281,8 +261,7 @@ export async function POST(req) {
           "Vitamin B9": 0,
       },
     },
-    {
-      week: 21,
+    week21: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -296,8 +275,7 @@ export async function POST(req) {
           "Magnesium": 0,
       },
     },
-    {
-      week: 22,
+    week22: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -311,8 +289,7 @@ export async function POST(req) {
           "Magnesium": 0,
       },
     },
-    {
-      week: 23,
+    week23: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -326,8 +303,7 @@ export async function POST(req) {
           "Magnesium": 0,
       },
     },
-    {
-      week: 24,
+    week24: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -341,8 +317,7 @@ export async function POST(req) {
           "Magnesium": 0,
       },
     },
-    {
-      week: 25,
+    week25: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -357,8 +332,7 @@ export async function POST(req) {
           "Coenzyme Q10": 0,
       },
     },
-    {
-      week: 26,
+    week26: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -373,8 +347,7 @@ export async function POST(req) {
           "Coenzyme Q10": 0,
       },
     },
-    {
-      week: 27,
+    week27: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -389,8 +362,7 @@ export async function POST(req) {
           "Coenzyme Q10": 0,
       },
     },
-    {
-      week: 28,
+    week28: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -405,8 +377,7 @@ export async function POST(req) {
           "Coenzyme Q10": 0,
       },
     },
-    {
-      week: 29,
+    week29: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -420,8 +391,7 @@ export async function POST(req) {
           "Potassium": 0,
       },
     },
-    {
-      week: 30,
+    week30: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -435,8 +405,7 @@ export async function POST(req) {
           "Potassium": 0,
       },
     },
-    {
-      week: 31,
+    week31: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -450,8 +419,7 @@ export async function POST(req) {
           "Potassium": 0,
       },
     },
-    {
-      week: 32,
+    week32: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -465,8 +433,7 @@ export async function POST(req) {
           "Potassium": 0,
       },
     },
-    {
-      week: 33,
+    week33: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -481,8 +448,7 @@ export async function POST(req) {
 
       },
     },
-    {
-      week: 34,
+    week34: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -497,8 +463,7 @@ export async function POST(req) {
 
       },
     },
-    {
-      week: 35,
+    week35: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -513,8 +478,7 @@ export async function POST(req) {
 
       },
     },
-    {
-      week: 36,
+    week36: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -529,8 +493,7 @@ export async function POST(req) {
 
       },
     },
-    {
-      week: 37,
+    week37: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -544,8 +507,7 @@ export async function POST(req) {
           "Omega-3 Fatty Acids": 0,
       },
     },
-    {
-      week: 38,
+    week38: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -559,8 +521,7 @@ export async function POST(req) {
           "Omega-3 Fatty Acids": 0,
       },
     },
-    {
-      week: 39,
+    week39: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -574,8 +535,7 @@ export async function POST(req) {
           "Omega-3 Fatty Acids": 0,
       },
     },
-    {
-      week: 40,
+    week40: {
       addedIngredients: [],
       eatenRecipes: [],
       nutrientContent: {
@@ -589,7 +549,7 @@ export async function POST(req) {
           "Omega-3 Fatty Acids": 0,
       },
     },    
-  ]
+  }
     });
 
     return NextResponse.json({ message: "User signed up." }, { status: 201 });

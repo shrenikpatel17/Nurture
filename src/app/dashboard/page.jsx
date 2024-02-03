@@ -37,6 +37,9 @@ export default function Dashboard() {
                 ingredients[ingredient] = ingredientsObj[ingredient]
             })
         })
+        user.allWeeksNutrientInfo["week" + activeWeek].addedIngredients.map((key) => {
+            ingredients[key] = {}
+        })
         dispatch(ingredientActions.setActiveIngredients(ingredients))
         setIsLoading(false)
     }, [activeWeek])
