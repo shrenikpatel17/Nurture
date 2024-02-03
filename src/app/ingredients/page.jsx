@@ -9,6 +9,13 @@ import NavBarComponent from "../components/NavBarComponent";
 import logo from '../../../public/logo.png'
 import Image from "next/image"
 import Wave from '../../../public/Wave.svg'
+import LoadingScreen from "../components/LoadingScreen"
+// import { redirect } from 'next/navigation'
+import { useNavigate } from "react-router-dom";
+import { Router } from "next/router";
+import { useRouter } from "next/navigation";
+
+
 
 
 export default function Ingredient() {
@@ -30,7 +37,12 @@ export default function Ingredient() {
         document.getElementById('new_ingredient_modal').close();
     }
 
+    const router = useRouter();     
+
+    const [isLoading, setIsLoading] = useState();
+
     const generate = async () => {
+        setIsLoading(true);
 
         let recipe1 = {};
         let recipe2 = {};
@@ -104,7 +116,9 @@ export default function Ingredient() {
                             console.log("Error during recipe post", error);
                           }
                     });
-            }
+                    setIsLoading(false);
+                    router.push("/recipe");
+                }
             });
 
        await sleep(500);
@@ -180,7 +194,7 @@ export default function Ingredient() {
 
     const select = async (e) => {
         e.preventDefault();
-        let selectedIngredient = e.target.innerHTML;
+        let selectedIngredient = e.target.getAttribute("id");
 
         if (!(selectedIngredients.includes(selectedIngredient))){
             selectedIngredients.push(selectedIngredient);
@@ -212,6 +226,7 @@ export default function Ingredient() {
 
     return(
         <>
+        {isLoading ? <LoadingScreen /> : <>
             {/* <div className="container px-4"> */}
             <Image src={logo} width={200} height={200} className='absolute ml-6 mt-2'></Image>
             <h1 className='text-white text-8xl p-5 mt-16 font-Jua absolute'>Personalized Ingredients</h1>
@@ -228,14 +243,15 @@ export default function Ingredient() {
                 return(
                   <div 
                     onClick={select} 
-                    key={index} 
+                    key={index}
+                    id={ingredient}
                     className="flex items-center bg-med-red rounded-full px-8 py-3 text-center hover:cursor-pointer"
                   >
                     {/* SVG icon goes here */}
                     <Image priority src={`${ingredient}.svg`} height={32} width={32}></Image>
                     
                     {/* Ingredient text */}
-                    <span className="flex-1 text-md font-Jua">
+                    <span id={ingredient} className="flex-1 text-md font-Jua">
                       {ingredient}
                     </span>
                   </div>
@@ -272,8 +288,9 @@ export default function Ingredient() {
 
         </div>
         </div>
-        </dialog>  
+        </dialog>
+        </>
+        }  
         </>
     )
-
 }

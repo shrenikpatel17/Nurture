@@ -57,7 +57,8 @@ module.exports = {
         'brown': '#A2442B',
         'red-gradient': '#E9656A', 
         'orange-gradient': '#FF9C7D',
-        'med-red': '#F497AA'
+        'med-red': '#F497AA', 
+        'bg': '#ECECFF'
       },
     },
   },
