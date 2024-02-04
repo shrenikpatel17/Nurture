@@ -1,7 +1,7 @@
 TartanHacks 2024 - Winner of the "Butterfly Effect" Prize for the Most Impactful hack with the greatest societal impact
 ## Nurture: An AI-powered nutrition app for pregnant mothers
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Created by Ashrith Athmaram, Daivik Patel, Shrenik Patel, and Weilin Chu 
 
 ## What is Nurture?
 
@@ -18,6 +18,3 @@ But what does our app do that other alternatives like doctors can’t do? Well, 
 We want to let people add custom ingredients and diets that aren’t on our list. We want to form a community by letting users add and share their own recipes and questions in-app. Since another major cause of malnutrition is money, we plan to implement price estimates and low-price meal options to help people with that concern.
 
 Thank you!
-
-Created by Ashrith Athmaram, Daivik Patel, Shrenik Patel, and Weilin Chu 
-
