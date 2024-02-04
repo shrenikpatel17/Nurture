@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+TartanHacks 2024 - Winner of the "Butterfly Effect" Prize for the Most Impactful hack with the greatest societal impact
+## Nurture: An AI-powered nutrition app for pregnant mothers
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## What is Nurture?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Do you know that 90% of pregnant women in high-income countries do not eat enough of the nutrients they need to have healthy pregnancies… and you know what’s worse? Currently, there are way more undernourished births than there were 10 years ago. But why? Besides lack of knowledge and budget considerations, people also have more dietary restrictions now, so it’s hard to figure out what to eat. 
 
-## Learn More
+And so we created a nutrient tracker tailored to the different needs of each stage of pregnancy. Whether you’re vegan or have crazy allergies, Nurture tells you which and how much of specific nutrients you should eat and why, checks if you reach those goals, and even makes recipes for you to try based on your diet and the ingredients you have on hand!
 
-To learn more about Next.js, take a look at the following resources:
+## How is it different?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+But what does our app do that other alternatives like doctors can’t do? Well, it’s free and easy access for you 24/7 between more limited doctor visits. It educates you in a clean and easy way, is tailored to your needs, and tracks your progress in a way books and webpages can’t. We compiled a lot of research from reputable sources on how nutrient needs differ as the stage of pregnancy changes in order to make our databases.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## What's next?
 
-## Deploy on Vercel
+We want to let people add custom ingredients and diets that aren’t on our list. We want to form a community by letting users add and share their own recipes and questions in-app. Since another major cause of malnutrition is money, we plan to implement price estimates and low-price meal options to help people with that concern.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Thank you!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Created by Ashrith Athmaram, Daivik Patel, Shrenik Patel, and Weilin Chu 
+
