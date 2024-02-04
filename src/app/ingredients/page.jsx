@@ -245,7 +245,7 @@ export default function Ingredient() {
                     onClick={select} 
                     key={index}
                     id={ingredient}
-                    className="flex items-center bg-med-red rounded-full px-8 py-3 text-center hover:cursor-pointer"
+                    className="flex items-center bg-med-red rounded-full px-8 py-3 text-center text-maroon hover:cursor-pointer"
                   >
                     {/* SVG icon goes here */}
                     <Image priority src={`${ingredient}.svg`} height={32} width={32}></Image>
