@@ -1,5 +1,5 @@
 TartanHacks 2024 - Winner of the "Butterfly Effect" Prize for the Most Impactful hack with the greatest societal impact
-## Nurture: An AI-powered nutrition app for pregnant mothers
+## Nurture: An AI-powered nutrition webApp for pregnant mothers
 
 Created by Ashrith Athmaram, Daivik Patel, Shrenik Patel, and Weilin Chu 
 
